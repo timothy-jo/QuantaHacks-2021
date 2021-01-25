@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/user-friendly-time-picker/dist/css/timepicker.min.css" />
+    <script src="/user-friendly-time-picker/dist/js/timepicker.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">  
+
+    <title>Client Homepage</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <img src="Tag.png">
+        </div>
+
+        <ul class="navbar__account">
+            <li><a class="acc" href="">Account</a></li>
+            <li><a class="sout" href="index.html">Sign Out</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <img src="headerbar.png">
+    </div>
+
+    <div class="name">
+        <img style="vertical-align:middle" src="james.png">
+        <b>Hi, James_in_ATX.</b>
+    </div>
+
+    <div class="left" style="padding-right:20px; border-right: 1px solid #ccc;">
+        <div class="therapist">
+            <p>Your Therapists:</p> <br>
+            <div class="PT">
+                <img style="vertical-align:middle" src="PT.jpg">
+                 Alicia Gillman
+                 <img class="cancel" src="circle-x.png">
+            </div>
+            <div class="addnewpt">
+                
+                <button class="addptbtn"><img src="add.png">Add New Therapist</button>
+            </div>
+        </div>
+        <div class="exercise">
+            <p class="exercisetitle">Your Exercise Program:</p>
+            <div class="routine e1">
+                <p class="routine 1">Seated Knee Flexion Stretch <button class="modal-button" href="#myModal1"><img src="external-link.png"></button></p>
+                <div class="e1row">
+                    <p>Seated on a chair, plant foot on the ground and slide forward so that knee bends and moves forward over toes. <br><br>Hold 1 minute.</p>
+                    <img src="e1.png">
+                </div>
+            </div>
+            <div class="routine e2">
+                <p class="routine 2">Quad Sets<button class="modal-button" href="#myModal2"><img src="external-link.png"></button></p>
+                <div class="e2row">
+                    <p>Set a timer for 3 minutes. 
+
+                        With leg resting and knee straight, alternate 10 second quads squeeze/10 seconds rest until timer ends. 
+                        </p>
+                        <img src="e2.png">
+                </div>
+            </div>
+            <div class="routine e3">
+                <p class="routine 3">Shallow Squat<button class="modal-button" href="#myModal3"><img src="external-link.png"></button></p>
+                <div class="e3row">
+                    <p>Hold onto chair or counter. Keep weight on heels as you bend your knees to about 45 degrees and then return to standing.
+
+                    <br><br> Perform 10 reps, rest and repeat.</p>
+                    <img src="e3.png">
+                </div>
+            </div>
+            <div class="routine e4">
+                <p class="routine 4">Straight Leg Raise <button class="modal-button" href="#myModal4"><img src="external-link.png"></button></p>
+                <div class="e4row">
+                    <p>Lying on back with the leg to work out straight and the other knee bent with foot on the floor. Tighten quads muscle, then hold knee straight as you lift the leg 
+
+                    <br><br>Perform 10 reps, rest and repeat.</p>
+                    <img src="e4.png">
+                </div>
+            </div>
+            <div class="routine e5">
+                <p class="routine 5">Prone Hamstring Curls <button class="modal-button" href="#myModal5"><img src="external-link.png"></button></p>
+                <div class="e5row">
+                    <p>Lie flat on stomach, both legs out straight. Bring one foot up towards rear, bending the knee. Use a 2# ankle weight.
+
+                    <br><br>Perform 10 reps, rest and repeat.</p>
+                    <img src="e5.png">
+                </div>
+            </div>
+        </div>
+        <a href="clienthome2.html"><button class="donebtn">I'm Done!</button></a>
+    </div>
+
+    <!-- where the middle line will be between the two columns
+    <div class="middle">
+        <img src="line.png">
+    </div> -->
+
+    <div class="right">
+        <div class="calendar">
+            <p class="performance">Your performance this month is currently: <b>76%</b></p>
+            <img src="calendar.png">
+        </div>
+        <div class="reminder">
+            <p class="remindertext">Let's set a reminder for your next session. <br>
+                What time is good? </p>
+        </div>
+        <div class="choosetime">
+            <div class="choosedate">
+                <li><button class="today">Today</button></li>
+                <li><button class="tomorrow">Tomorrow</button></li>
+                <li><button class="nextday">Next Day</button></li>
+            </div>
+            <div class="timer">
+                <input type="text" class="bs-timepicker" />
+                <script>
+                    $(function () {
+                      $('.bs-timepicker').timepicker();
+                    });
+                </script>
+                <button class="signup" href="">Set Reminder</button>
+            </div>
+        </div>
+        
+        <div class="question">
+            Neet to ask a question?
+            <botton class="email"><a href="mailto:h6jo@uwaterloo.ca">Email Therapist</a></botton>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal1" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <!-- close -->
+            <span class="close">&times;</span>
+            <!-- image -->
+            <img src="rectangle 1.png" class="modal-content" id="img01">
+            <!-- text -->
+            <div class="modal-explanation">
+                <p class="modal-explanation-title">Seated Knee Flexion Stretch </p>
+                <p>Seated on a chair, plant foot on the ground and slide forward
+                    so that knee bends and moves forward over toes. <br>
+                    Hold 1 minute.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="myModal2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <!-- close -->
+            <span class="close">&times;</span>
+            <!-- image -->
+            <img src="rectangle 2.png" class="modal-content" id="img02">
+            <!-- text -->
+            <div class="modal-explanation">
+                <p class="modal-explanation-title">Quad Sets</p>
+                <p>Set a timer for 3 minutes. With leg resting and kneww straight, alternate 10 second quads squeeze/10seconds rest until timer ends.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal3" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <!-- close -->
+            <span class="close">&times;</span>
+            <!-- image -->
+            <img src="rectangle 3.png" class="modal-content" id="img03" >
+            <!-- text -->
+            <div class="modal-explanation">
+                <p class="modal-explanation-title">Shallow Squat</p>
+                <p>Hold onto chair or counter. Keep weight on heels as you bend your knees to about 45 degrees and then return to standing. Perform 10 reps, rest and repeat. </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal4" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <!-- close -->
+            <span class="close">&times;</span>
+            <!-- image -->
+            <img src="rectangle 4.png" class="modal-content" id="img03" >
+            <!-- text -->
+            <div class="modal-explanation">
+                <p class="modal-explanation-title">Straight Leg Raise</p>
+                <p>Lying on back with the leg to work out straight and the other knee bent with foot on the floor. Tighten quads muscle, then hold knee straight as you lift the leg. Perform 10 reps, rest and repeat.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal5" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <!-- close -->
+            <span class="close">&times;</span>
+            <!-- image -->
+            <img src="rectangle 5.png" class="modal-content" id="img03" >
+            <!-- text -->
+            <div class="modal-explanation">
+                <p class="modal-explanation-title">Prone Hamstring Curls</p>
+                <p>Lie flat on stomach, both legs out straight. Bring one foot up towards rear, bending the knee. Use a 2# ankle weight.
+
+                    Perform 10 reps, rest and repeat.
+                    
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get the button that opens the modal
+var btn = document.querySelectorAll("button.modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}
+    </script>
+ 
+
+
+</body>
+</html>

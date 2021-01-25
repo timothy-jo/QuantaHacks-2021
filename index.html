@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Theratrack</title>
+    
+</head>
+<body>
+
+    <!--background photo-->
+    <div class="bg">
+
+        <!--Logo-->
+        <section class="logo">
+            <div class="logotext">
+                <span>Theratrack</span>
+            </div>
+            <div class="slogan">
+                <span>Level Up With Daily Progress</span>
+            </div>
+        </section>
+
+        <!--Log In/Sign Up-->
+        <section class="getstarted">
+            <ul>
+                <li><button id="myBtn" class="signin">Sign In</button></li>
+                <li><a href="create.html"><button class="signup" >Create Account</button></li></a>
+            </ul>
+            
+        </section>
+        
+    </div>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <!-- close -->
+            <span class="close">&times;</span>
+            <!-- image -->
+            <p class="welcome">Welcome Back!</p> 
+            <!-- text -->
+            <form class="modal-useraccount">
+                <label for="username">Username</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password"><br>
+            </form>
+            <ul class="modal-yesorno">
+                <li><button class="cancel">Cancel</button></li>
+                <li><button class="submit">SUBMIT</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+    
+
+</body>
+</html>

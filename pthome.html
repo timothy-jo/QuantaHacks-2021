@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style4.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/user-friendly-time-picker/dist/css/timepicker.min.css" />
+    <script src="/user-friendly-time-picker/dist/js/timepicker.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">  
+
+    <title>Client Homepage</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <img src="Tag.png">
+        </div>
+
+        <ul class="navbar__account">
+            <li><a class="acc" href="">Account</a></li>
+            <li><a class="sout" href="index.html">Sign Out</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <img src="headerbar.png">
+    </div>
+
+    
+
+    <div class="left" style="padding-right:20px; border-right: 1px solid #ccc;">
+        <div class="therapist">
+            <div class="PT">
+                <img style="vertical-align:middle" src="PT.jpg">
+                 Alicia Gillman 
+                 (Physical Therapist)
+            
+            </div>
+          
+        </div>
+        <div class="exercise" >
+            <p class="exercisetitle">Your Clients</p>
+            <div class="routine e1">
+                <img style="vertical-align:middle" src="james.png">
+                <b>James_in_ATX</b>
+            </div>
+            <div class="routine e2">
+
+                    <img style="vertical-align:middle" src="p1.png">
+                    <b>GolfNut43</b>
+                
+            </div>
+            <div class="routine e3">
+               
+                    <img style="vertical-align:middle" src="p2.png">
+                    <b>ReallyAmerican</b>
+                
+            </div>
+            <div class="routine e4">
+              
+                    <img style="vertical-align:middle" src="p3.png">
+                    <b>Just_Tracy</b>
+                
+            </div>
+            <div class="routine e5">
+              
+                    <img style="vertical-align:middle" src="p4.png">
+                    <b>Leslie Jones</b>
+            
+            </div>
+        </div>
+        
+        <div class="newexercise">
+            <p>Compose New Exercise</p><br>
+            <div class="pink">
+                <div class="createorselect">
+                    <input type="text" placeholder="Create New Exercise Title"></input> <br><br>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Select from Previous Titles</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#">Prone Hamstring Curls</a>
+                          <a href="#">Hamstring Stretch</a>
+                          <a href="#">Lats Pull Down</a>
+                          <a href="#">Forward Bend</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="insertimage">
+                    <img src="insert.png">
+                </div>
+            </div>
+            <div class="description">
+                <input class="exercisedescription" type="text"></input>
+            </div>
+            <ul class="submitorcancel">
+                <li><button class="cancel">Cancel</button></li>
+                <li><button class="submit">SUBMIT</button></li>
+            </ul>
+        </div>
+     
+
+    </div>
+
+    <!-- where the middle line will be between the two columns
+    <div class="middle">
+        <img src="line.png">
+    </div> -->
+
+    <div class="right">
+        <div class="calendar">
+            <p class="performance">Your performance this month is currently: <b>76%</b></p>
+            <img src="calendar.png">
+        </div>
+        <div class="reminder">
+            <p class="remindertext">Let's set a reminder for your next session. <br>
+                What time is good? </p>
+        </div>
+        <div class="choosetime">
+            <div class="choosedate">
+                <li><button class="today">Today</button></li>
+                <li><button class="tomorrow">Tomorrow</button></li>
+                <li><button class="nextday">Next Day</button></li>
+            </div>
+            <div class="timer">
+                <input type="text" class="bs-timepicker" />
+                <script>
+                    $(function () {
+                      $('.bs-timepicker').timepicker();
+                    });
+                </script>
+                <button class="signup" href="">Set Reminder</button>
+            </div>
+        </div>
+        
+        <div class="question">
+            Neet to ask a question?
+            <botton class="email"><a href="mailto:h6jo@uwaterloo.ca">Email Therapist</a></botton>
+        </div>
+    </div>
+
+    <script>
+                /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+        }
+    </script>
+
+    
+
+
+</body>
+</html>

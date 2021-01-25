@@ -1,0 +1,341 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.name, .therapist, .exercise, .donebtn {
+    padding: 12px 16px;
+}
+
+.therapist {
+    margin-top: 50px;
+}
+
+.exercise img {
+    margin-left: 64px;
+}
+
+.exercise {
+    margin-top: 24px;
+    font-weight: bold;
+}
+
+.exercisetitle {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.routine {
+    margin-top: 12px;
+}
+
+.e1 {
+    margin-top: 16px;
+    background-color: #C4C4C4;
+    padding: 12px 16px;
+}
+
+.e1row{
+    display: flex;
+}
+
+.e1 p {
+    width: 60%;
+}
+
+.e2 {
+    background-color: #C4C4C4;
+    padding: 12px 16px;
+}
+
+.e2row{
+    display: flex; 
+}
+
+.e2 p {
+    width: 60%;
+}
+
+.e3 {
+    background-color: #C4C4C4;
+    padding: 12px 16px;
+}
+
+.e3row{
+    display: flex;
+}
+
+.e3 p {
+    width: 60%;
+}
+
+.e4 {
+    background-color: #C4C4C4;
+    padding: 12px 16px;
+}
+
+.e4row{
+    display: flex; 
+}
+
+.e4 p {
+    width: 60%;
+}
+
+.e5 {
+    background-color: #C4C4C4;
+    padding: 12px 16px;
+}
+
+.e5row{
+    display: flex; 
+}
+
+.e5 p {
+    width: 60%;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+.navbar__logo {
+    font-size: 24px;
+    background-color: white;
+    padding: 8px 12px;  
+}
+
+.navbar__account {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+
+}
+
+.acc {
+    position: absolute;
+    width: 58px;
+    height: 19px;
+    left: 1100px;
+    top: 29px;
+    text-decoration: none;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.sout {
+    position: absolute;
+    width: 61px;
+    height: 19px;
+    left: 1183px;
+    top: 29px;
+    text-decoration: none;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.header {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.left {
+    width: 64%;
+    height: 100%;
+    float: left;
+    
+}
+
+
+.right {
+    width: 30%;
+    height: 100%;
+    float: right;
+    display: column;
+    justify-content: space-between;
+}
+
+.signup {
+    border-style: solid;
+    background-color: #CC5B3F;
+    border: none;
+    font-size: 1.5em;
+    color: white;
+    padding: 8px 12px;
+    margin: 12px 16px;
+    /* float: right;
+    margin-right: 12px; */
+}
+
+.donebtn {
+    border-style: solid;
+    background-color: #CC5B3F;
+    border: none;
+    font-size: 1.5em;
+    color: white;
+    padding: 32px 48px;
+    margin: 12px 16px;
+    
+}
+
+.addptbtn {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    background-color: #C4C4C4;
+    border-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timepicker {
+    position: absolute;
+    z-index: 1000;
+    float: left;
+   
+    padding-bottom: 5px;
+    margin: 12 16px;
+    list-style: none;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+  }
+
+.choosedate li {
+    list-style-type: none;
+    padding: 8px 12px;
+}
+
+.question {
+    font-size: 2em;
+    display: flex; 
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+}
+
+.email {
+    color: white;
+    font-family:'Noto Sans', sans-serif;
+    border-style: solid;
+    background-color: #CC5B3F;
+    border: none;
+    font-size: 0.5em;
+    color: white;
+    padding: 8px 12px;
+    margin: 12px 16px;
+    position: absolute; 
+    top: 36px;
+    /* float: right;
+    margin-right: 12px; */
+}
+
+.PT {
+    background-color: #C4C4C4;
+}
+
+.cancel {
+    vertical-align: middle;
+}
+
+
+.therapist {
+    font-weight: bold;
+}
+
+.therapist p {
+    font-size: 1.5em;
+}
+
+.addnewpt {
+    font-size: 0.7em;
+}
+
+.addnewpt img {
+   margin-right: 10px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    /* background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; */
+    text-align: center;
+   
+    padding: 20px;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    background-color: #F1F0EE;
+  }
+  
+ .modal-explanation {
+     text-align: left;
+     background-color: white;
+    
+ }
+
+ .modal-explanation-title {
+     font-weight: bold;
+ }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .remindertext {
+      font-weight: bold;
+      font-size: 2em;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+#popup {
+    background-color: transparent;
+    border: none;
+}
+
+.modal-button {
+    background-color: transparent;
+    border: none;
+}

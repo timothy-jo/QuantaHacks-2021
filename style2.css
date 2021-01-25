@@ -1,0 +1,141 @@
+.body {
+    margin: 0;
+}
+
+html {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.header {
+    font-size: 2em;  
+    font-weight: bold;
+    
+}
+
+.signup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    padding: 40px 70px;
+    width: 40vw;
+    height: 40vw;
+    background-color: #F1F0EE;
+}
+
+input[type="text"], textarea {
+
+    background-color : #DDDAD6; 
+  
+  }
+
+  input[type="password"], textarea {
+
+    background-color : #DDDAD6; 
+  
+  }
+
+.overalluser {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accounttype{
+    display: column;
+    background-color: #BCB6AF; 
+
+}
+
+.avatar {
+    font-weight: bold;
+}
+
+input[type="button"] {
+    border: none;
+    width: 80px;
+    height: 80px;
+    
+}
+
+input[type="button"]:hover {
+    background-color: #3e8e41;
+}
+
+input[type="button"]:after {
+    border: 1px solid black;
+}
+
+
+input.img-button-1{
+    background: url( "1.jpg" ) no-repeat;
+    
+    cursor: pointer;
+}
+
+input.img-button-2{
+    background: url( "2.jpg" ) no-repeat;
+    
+    cursor: pointer;
+}
+
+input.img-button-3{
+    background: url( "3.jpg" ) no-repeat;
+    
+    cursor: pointer;
+}
+
+input.img-button-4{
+    background: url( "4.jpg" ) no-repeat;
+    
+    cursor: pointer;
+}
+
+input.img-button-5{
+    background: url( "5.jpg" ) no-repeat;
+    
+    cursor: pointer;
+}
+
+input.img-button-6{
+    background: url( "6.jpg" ) no-repeat;
+    
+    cursor: pointer;
+}
+
+input.img-button-7{
+    background: url( "7.jpg" ) no-repeat;
+    
+    cursor: pointer;
+}
+
+input.img-button-8{
+    background: url( "8.jpg" ) no-repeat;
+    
+    cursor: pointer;
+}
+
+input.img-button-9{
+    background: url( "9.jpg" ) no-repeat;
+    
+    cursor: pointer;
+}
+
+input.img-button-10{
+    background: url( "10.jpg" ) no-repeat;
+    
+    cursor: pointer;
+}
+
+input.img-button-11{
+    background: url( "11.jpg" ) no-repeat;
+    
+    cursor: pointer;
+}
+
+input.img-button-12{
+    background: url( "Add_Avatar_button.png" ) no-repeat;
+    
+    cursor: pointer;
+}
+
