@@ -16,6 +16,11 @@ body {
     font-size: 2em;
 }
 
+.notifications {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
 .exercise {
     margin-top: 24px;
     font-weight: bold;
